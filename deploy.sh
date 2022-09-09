@@ -9,5 +9,5 @@ docker push kaanyalti/multi-worker:latest
 docker push kaanyalti/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=cygnetops/multi-server-pgfix-5-11
-kubectl set image deployments/client-deployment client=kaanyalti/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=kaanyalti/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=stephengrider/multi-client
+kubectl set image deployments/worker-deployment worker=stephengrider/multi-worker
